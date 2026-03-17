@@ -19,11 +19,5 @@ bien_places = 0
 mal_places = 0
 
 # Comparaison des couleurs
-for i in range(4):
-    if proposition[i] == combinaison[i]:
-        bien_places += 1
-    elif proposition[i] in combinaison:
-        mal_places += 1
 
-print("Couleurs bien placées :", bien_places)
-print("Couleurs mal placées :", mal_places)
+#print les couleurs si elle sont bien places ou mal place
