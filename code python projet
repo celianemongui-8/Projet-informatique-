@@ -11,15 +11,15 @@ print("Choisissez un mode: ")
 print("1 - Mode contre l'ordinateur")
 print("2 - Mode 2 joueurs")
 
-choix = input("Votre choix : ")
+Mode = input("Votre choix : ")
 
 # Créer la combinaison secrète selon le mode de jeu
-if mode == "1":
+if Mode == "1":
     combinaison = []
     for i in range(4):
         couleur= random.choice(couleurs)
         combinaison.append(couleur)
-elif mode == "2":
+elif Mode == "2":
     print("Joueur 1, entrez 4 couleurs séparées par un espace : ")
     combinaison = input("Entrez la combinaison : ").split()   #.split() permet de decouper et de transformer en liste 
     print("\n")   #permet un retour à la ligne pour cacher la combinaison crée par le joueur
