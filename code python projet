@@ -28,6 +28,10 @@ elif Mode == "2":
 #essais max
 essais_max = 10
 essais = 0
+
+# variable pour limiter le retour en arrière après une proposition
+retour_disponible = True
+
 #la boucle while pour le jeu:le programme principale quoi
 
 while essais < essais_max:
@@ -61,6 +65,14 @@ while essais < essais_max:
     if bien_place==4:
         print("BRAVO TU AS GAGNES")
         break
+# proposition de retour en arrière
+if retour_disponible :
+    choix = input("souhaites-tu utiliser ton retour en arrière ? (oui/non) : ")
+    if choix == "oui"
+        print("Tu peux refaire cette tentative")
+        retour_disponible = False
+        continue
+# sinon jeu continue
     essais += 1
     print("Il te reste", essais_max - essais,"essais")
     if essais== essais_max and bien_place != 4:
